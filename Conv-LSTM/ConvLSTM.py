@@ -14,7 +14,7 @@ from keras.layers import *
 from keras.layers.wrappers import *
 from keras.optimizers import RMSprop
 
-dataframe = pandas.read_csv('/home/hailin/Documents/kmu/data/1589.csv', usecols=[1, 2], engine='python', skipfooter=1)
+dataframe = pandas.read_csv('/user/arch/jin/Evbus/evBus/1589.csv', usecols=[1, 2], engine='python', skipfooter=1)
 dataset = dataframe.values
 dataset = dataset.astype('float32')
 
@@ -109,4 +109,4 @@ model.add(TimeDistributed(Dense(units=1, name='dense_1', activation='relu')))
 model.compile(loss='mean_squared_error', optimizer='adam', metrics=['mae', 'mape'])
 model.fit(trainX, trainY, epochs=120, batch_size=16)
 
-model.save('/home/hailin/Documents/kmu/data/ltsm.h5')
+model.save('/user/arch/jin/Evbus/ConvLSTM.h5')
