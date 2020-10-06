@@ -107,6 +107,6 @@ model.add(TimeDistributed(Dense(units=1, name='dense_1', activation='relu')))
 # optimizer = RMSprop() #lr=0.0001, rho=0.9, epsilon=1e-08, decay=0.9)
 # model.compile(loss = "mse", optimizer = optimizer)
 model.compile(loss='mean_squared_error', optimizer='adam', metrics=['mae', 'mape'])
-model.fit(trainX, trainY, epochs=40, batch_size=16, verbose=1)
+model.fit(trainX, trainY, epochs=20, batch_size=16, verbose=1)
 
 model.save('/user/arch/jin/Evbus/ConvLSTM.h5')
