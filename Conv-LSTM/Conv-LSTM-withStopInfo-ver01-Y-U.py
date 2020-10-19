@@ -16,7 +16,7 @@ from keras.optimizers import RMSprop
 from keras.callbacks import CSVLogger, EarlyStopping
 
 plt.style.use('ggplot')
-%matplotlib inline
+# %matplotlib inline
 plt.rcParams['axes.facecolor'] = 'w'
 plt.rcParams['axes.labelcolor'] = 'k'
 plt.rcParams['axes.edgecolor'] = 'k'
