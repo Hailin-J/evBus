@@ -17,7 +17,7 @@ from keras.callbacks import CSVLogger, EarlyStopping
 # import keras.backend.tensorflow_backend as ktf
 
 plt.style.use('ggplot')
-%matplotlib inline
+# %matplotlib inline
 plt.rcParams['axes.facecolor'] = 'w'
 plt.rcParams['axes.labelcolor'] = 'k'
 plt.rcParams['axes.edgecolor'] = 'k'
